@@ -1,0 +1,28 @@
+{
+  "name": "todo_list",
+  "version": "1.0.0",
+  "description": "My To Do List",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artorralbaiii/todo-list.git"
+  },
+  "keywords": [
+    "Todo",
+    "list",
+    "planner",
+    "task",
+    "list",
+    "todo",
+    "list"
+  ],
+  "author": "a.r.torralba.iii@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artorralbaiii/todo-list/issues"
+  },
+  "homepage": "https://github.com/artorralbaiii/todo-list#readme"
+}
