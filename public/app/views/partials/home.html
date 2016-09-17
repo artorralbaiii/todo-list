@@ -1,0 +1,21 @@
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		
+		<h1><a href="#">Add Item...</a></h1>
+
+		<div class="section todos-section">
+			<div class="panel panel-default" ng-repeat="todo in todos">
+				<div class="panel-heading todo-title"> 
+					<span ng-if="!todo.editMode">{{todo.date}}</span> 
+					<input type="text" name="{{'todo-date-' + $index}}" value="{{todo.date}}" ng-if="todo.editMode"/>
+					<a class="btn btn-default btn-todo" ng-click="editDate($index);">{{ !todo.editMode ? 'Edit...' : 'Save...' }}</a> 
+				</div>
+				<div class="panel-body">
+					<div class="list-group">
+						<a  href="#" class="list-group-item todo-items" ng-repeat="task in todo.tasks">{{task.title}}</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

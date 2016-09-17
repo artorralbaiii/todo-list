@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="TodoList">
+<head>
+	<title>Todo List Application | My Todos</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS-Vendor -->
+    <link rel="stylesheet" href="lib/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/css/vendor/normalize.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="lib/css/main.css">
+
+</head>
+<body>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">To Do List</a>
+			</div>  
+		</div>
+	</nav>
+
+	<main class="container-fluid" ng-view>
+	</main>
+
+	<!-- JS-Vendor -->
+	<script src="lib/js/vendor/jquery.min.js" ></script>
+	<script src="lib/js/vendor/angular.min.js" ></script>
+	<script src="lib/js/vendor/angular-route.min.js" ></script>
+
+	<!-- angular-modules -->
+	<script src="app/app.js" ></script>	
+	<script src="app/app.route.js" ></script>	
+
+	<!-- controllers -->
+	<script src="app/controllers/home.ctrl.js" ></script>
+
+</body>
+</html>
